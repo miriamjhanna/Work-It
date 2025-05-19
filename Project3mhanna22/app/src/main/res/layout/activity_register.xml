@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="@drawable/my_gradient">
+
+    <EditText android:id="@+id/edtFirst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="First name"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"/>
+
+    <EditText android:id="@+id/edtLast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Last name"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"/>
+
+    <EditText android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"/>
+
+    <EditText android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"/>
+
+    <EditText android:id="@+id/edtPassword2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm password"
+        android:inputType="textPassword"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_gradient"
+        app:backgroundTint="@null"/>
+</LinearLayout>

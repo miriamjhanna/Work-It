@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="horizontal"
+    android:fadeScrollbars="false"
+    android:fillViewport="true">
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".ManageExercises"
+        android:background="@drawable/my_gradient"
+        android:id="@+id/manage_exercises_main">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/add_exercise_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@null"
+            android:background="@drawable/button_gradient"
+            android:text="+"
+            android:textSize="55sp"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:onClick="onButtonClickManage"
+            android:layout_marginBottom="20dp"
+            />
+        <ListView android:id="@+id/mylist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:layout_below="@id/add_exercise_button"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/manage_ex_ret_home_button"
+            android:background="@drawable/button_gradient"
+            app:backgroundTint="@null"
+            android:text="Return Home"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:textSize="20sp"
+            android:onClick="onButtonClickManage"/>
+    </RelativeLayout>
+</ScrollView>

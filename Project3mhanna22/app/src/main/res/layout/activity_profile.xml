@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/my_gradient">
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtCurrentEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"/>
+
+        <EditText android:id="@+id/edtFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtCurrentEmail"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:hint="First name"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="20sp"/>
+
+        <EditText android:id="@+id/edtLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtFirstName"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:hint="Last name"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="20sp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnUpdateName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Name"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:layout_below="@id/edtLastName"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/button_gradient"
+            app:backgroundTint="@null"/>
+
+        <EditText android:id="@+id/edtNewPw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnUpdateName"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:hint="New password"
+            android:inputType="textPassword"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="20sp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnChangePw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Password"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:layout_below="@id/edtNewPw"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/button_gradient"
+            app:backgroundTint="@null"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log Out"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:layout_below="@id/btnChangePw"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/button_gradient"
+            app:backgroundTint="@null"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete Account"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:layout_below="@id/btnLogout"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/button_gradient"
+            app:backgroundTint="@null"/>
+    </RelativeLayout>
+</ScrollView>

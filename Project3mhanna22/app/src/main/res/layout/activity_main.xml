@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical"
+    android:fadeScrollbars="false"
+    android:fillViewport="true"
+    >
+
+    <RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="@drawable/my_gradient">
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Work It!"
+            android:textColor="#FFFFFF"
+            android:textSize="70sp" />
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/home_screen_line_art"
+            android:layout_centerInParent="true"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/log_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/manage_list_button"
+            android:background="@drawable/button_gradient"
+            android:fontFamily="sans-serif-medium"
+            android:text="Log Exercises"
+            app:backgroundTint="@null"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:textSize="18sp"
+            android:onClick="onButtonClick"
+
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/manage_list_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Manage Exercise List"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/button_gradient"
+            app:backgroundTint="@null"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:textSize="18sp"
+            android:onClick="onButtonClick"
+            android:layout_marginBottom="100dp"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/profile_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="View Profile"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/button_gradient"
+            app:backgroundTint="@null"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:textSize="18sp"
+            android:onClick="onButtonClick"
+            android:layout_marginBottom="47dp"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>

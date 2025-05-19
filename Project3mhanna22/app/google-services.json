@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "859299398388",
+    "project_id": "work-it-587e1",
+    "storage_bucket": "work-it-587e1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:859299398388:android:d9746f8dd5b398f25b94a1",
+        "android_client_info": {
+          "package_name": "com.example.project3_mhanna22"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAa4bLaEL5VcTx-hHU5l3MH8XiORPcnNK4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
